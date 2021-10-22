@@ -16,39 +16,69 @@
     <div class="container">
 
       <div class="avatar">
-        <img src="images/build.svg" alt="Selo rockeat">
-        <img src="https://lorempixel.com/185/185/people/" alt="Foto pessoal">
+        <span>
+          <img src="images/build.svg" alt="Selo rockeat">
+        </span>
+        <img src="images/me.jpg" alt="Foto pessoal">
       </div>
 
-      <h1>Italo Ferreira</h1>
-      <img src="images/github.svg" alt="Icone do github">
-      <a href="facebook.com">Italo ferreira</a>
+      <h1 id="userName">Italo Ferreira</h1>
 
+
+      <a href="facebook.com" target="_blank">Italo ferreira
+        <img src="images/github.svg" alt="Icone do github"
+        
+        >
+      </a>
+  
       <p>An instructor focused on helping pople start programming for web</p>
 
-      <ul>
-        <li>
-          <a href="https://youtube.com">
-          <img src="images/youtube.svg" alt="Logo do youtube" target="_blank">
+      <ul id="socialLinks">
+        <li class="youtube">
+          <a href="https://youtube.com" target="_blank">
+          <img src="images/youtube.svg" alt="Logo do youtube">
           </a>
         </li>
-        <li>
-          <a href="https://instagram.com">
-          <img src="images/instagram.svg" alt="Logo do instagram" target="_blank">
+        <li class="instagram">
+          <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram.svg" alt="Logo do instagram">
         </a>
         </li>
-        <li>
-          <a href="https://facebook.com">
-          <img src="images/facebook.svg" alt="Logo do facebook" target="_blank">
+        <li class="facebook">
+          <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.svg" alt="Logo do facebook">
           </a>
         </li>
-        <li>
-          <a href="https://twitter.com">
-          <img src="images/twitter.svg" alt="Logo do twitter" target="_blank">
+        <li class="twitter">
+          <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter.svg" alt="Logo do twitter">
           </a>
         </li>
       </ul>
     </div>
   </main>
+
+  <script>
+
+    const linksSocialMidia = {
+      github: "italo",
+      youtube: "italo",
+      instagram: "italo",
+      facebook: "italo",
+      twitter: "italo"
+    }
+
+    function changeNameSocialMidia(){ 
+      for(let li of socialLinks.children) {
+        const social = li.getAttribute('class')
+
+        li.children[0].href = `https://${social}.com/${linksSocialMidia[social]}`
+
+        alert(li.children[0].href)
+      }
+    }
+
+    changeNameSocialMidia()
+  </script>
 </body>
 </html>
