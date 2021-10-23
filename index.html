@@ -19,19 +19,18 @@
         <span>
           <img src="images/build.svg" alt="Selo rockeat">
         </span>
-        <img src="images/me.jpg" alt="Foto pessoal">
+        <img src="images/me.jpg" alt="Foto pessoal" id="userPhoto">
       </div>
 
       <h1 id="userName">Italo Ferreira</h1>
 
 
-      <a href="facebook.com" target="_blank">Italo ferreira
-        <img src="images/github.svg" alt="Icone do github"
-        
-        >
+      <a id="userLink" href="facebook.com" target="_blank">
+        <span id="userLogin">Italo ferreira</span> 
+        <img id="userPhoto" src="images/github.svg" alt="Icone do github">
       </a>
   
-      <p>An instructor focused on helping pople start programming for web</p>
+      <p id="Bio">An instructor focused on helping pople start programming for web</p>
 
       <ul id="socialLinks">
         <li class="youtube">
@@ -58,27 +57,6 @@
     </div>
   </main>
 
-  <script>
-
-    const linksSocialMidia = {
-      github: "italo",
-      youtube: "italo",
-      instagram: "italo",
-      facebook: "italo",
-      twitter: "italo"
-    }
-
-    function changeNameSocialMidia(){ 
-      for(let li of socialLinks.children) {
-        const social = li.getAttribute('class')
-
-        li.children[0].href = `https://${social}.com/${linksSocialMidia[social]}`
-
-        alert(li.children[0].href)
-      }
-    }
-
-    changeNameSocialMidia()
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
