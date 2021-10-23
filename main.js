@@ -1,10 +1,10 @@
 
   const linksSocialMidia = {
     github: "ItaloFL",
-    youtube: "italo",
-    instagram: "italo",
-    facebook: "italo",
-    twitter: "italo"
+    youtube: "maykbrito",
+    instagram: "italo.ferreira.5220",
+    facebook: "italo.ferreira.5220",
+    twitter: "maykbrito"
   }
 
   function changeNameSocialMidia(){ 
@@ -13,11 +13,10 @@
 
       li.children[0].href = `https://${social}.com/${linksSocialMidia[social]}`
 
-      alert(li.children[0].href)
     }
   }
 
-  // changeNameSocialMidia()
+  changeNameSocialMidia()
 
 
   function getGitHubInfos() {
