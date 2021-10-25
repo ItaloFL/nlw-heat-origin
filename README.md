@@ -52,7 +52,7 @@ This project **NLW Heat** is a event, and i do it for test and improve my skills
 
 ## Developer
 
-  Ítalo Ferreira Lopes
+Ítalo Ferreira Lopes
 
 
 
